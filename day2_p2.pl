@@ -5,9 +5,7 @@ use Scalar::Util qw(looks_like_number);
 use List::Util qw(reduce);
 
 open(my $file, '<', 'file.txt');
-# 12 red cubes, 13 green cubes, and 14 blue cubes
 
-use Data::Dump qw(pp);
 my $sum = 0;
 my $pattern = '(\\d+) red|(\\d+) green|(\\d+) blue';
 while (my $line = <$file>) {
